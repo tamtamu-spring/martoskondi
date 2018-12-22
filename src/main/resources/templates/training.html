@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="https://www.thymeleaf.org/">
+
+  <head>
+      <!--/*/ <th:block th:include="fragments/head :: head"></th:block> /*/-->
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <!--/*/ <th:block th:include="fragments/navigation :: navigation"></th:block> /*/-->
+
+    <!-- Header with Background Image -->
+    <!--/*/ <th:block th:include="fragments/header :: header"></th:block> /*/-->
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <div class="row">
+        <div class="col-sm-8">
+          <h2 class="mt-4">Edzések</h2>
+            <hr>
+            <p> TODO: Make some words Bold..</p>
+            <p> TODO: Add some extra top-margin to tabs</p>
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link active" id="nav-cardio-tab" data-toggle="tab" href="#nav-cardio"
+                       role="tab" aria-controls="nav-cardio" aria-selected="true">Kardió edzések</a>
+                    <a class="nav-item nav-link" id="nav-weighted-tab" data-toggle="tab" href="#nav-weighted"
+                       role="tab" aria-controls="nav-weighted" aria-selected="false">Súlyzós edzések</a>
+                </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-cardio" role="tabpanel" aria-labelledby="nav-cardio-tab" style="text-align:justify">
+                    <p>A táplálkozás rovatban leírtak még nem elegendők 100%-osan a hatékony diétához. Ehhez elengedhetetlenek a megfelelő kardió,
+                        vagyis kardiovaszkuláris edzések. A kardió szó a szívre, vérkeringésre utal. A kardió edzéseknek két tartománya van: az aerob,
+                        amely a szénhidrát- és zsírraktárakat használja energiaforrásként, és lehet anaerob, amely során kizárólag a szénhidrátraktárainkat
+                        használjuk el, és tejsav-felhalmozódással, tehát izomlázzal jár. A magyar irodalmakban gyakran egyenértékűvé teszik az anaerob
+                        és a kardió fogalmát, de valójában mind az aerob, mind az anaerob mozgásforma valamilyen szinten szív- és érrendszeri edzés,
+                        így érdemesebb a fent említett módon csoportosítani.</p>
+
+                    <p>A hatékony diétához számunkra aerob edzésre van szükség, mivel látható, hogy zsírégetésre csak ebben az esetben van lehetőség.
+                        A szénhidrátokat aerob és anaerob körülmények között is elégethetjük, azonban aerob körülmények között 19-szer jobban hasznosulnak,
+                        mint anaerob körülmények között. A sejtek, ha tehetik, mindig az aerob utat választják. Az anaerob edzésnek inkább az izmaink látják
+                        kárát, ugyanis ekkora terhelés gyorsan lemeríti az izmok glikogénraktárait. Ennek ellenére ennek is megvan az előnye, mert a
+                        sejtek előbb jutnak energiához.</p>
+
+                    <p>Anaerob típusú edzés minden olyan mozgásforma, ahol a maximális pulzusszám 80%-a, vagy afölött dolgozol, ahol a szénhidrátok elégetése
+                        oxigén hiányában történik. Ilyen jellegű például a futás, ha nagy sebességgel végzed (sprintek). Honnan tudod, hogy oxigén jelenléte
+                        nélkül történt az energianyerés? Hát onnan, hogy lihegsz, mint egy kutya, mert a szervezetedben rendelkezésre álló oxigén nem volt
+                        elegendő a sejtek oxigénigényének kielégítéshez, azaz oxigénadósság keletkezett, hypoxiás állapotba kerültél. Ez a fajta terhelés
+                        40-50 másodpercig tartható fent. Az anaerob típusú mozgás során azért veszítünk az izomzatunkból, mert ilyen jellegű terhelésnél a
+                        szervezet a kizárólag a szénhidrátraktárait használja fel az energiapótlásra (hiszen így gyorsabban el tudja érni), azt pedig az izmok
+                        és a máj tárolják.</p>
+
+                    <p> Ellenben az aerob típusú mozgásformák, amelyek az anaerob mozgásformák alacsonyabb pulzusszámmal végzett verzióinak felelnek meg,
+                        nemcsak nekünk, kondisoknak, hanem minden hétköznapi egészséges embernek ajánlott. Előnyei: a testzsírszázalék, a vérnyomás, a
+                        koleszterinszint és a visszerek számának csökkenése, a szív élettartamának növekedése. Ennél a mozgásformánál, amely lehet egy
+                        gyorsabb tempójú gyaloglás (4-6 km/h), szobakerékpár, taposógép, vagy elliptikus tréneren végzett gyakorlat, a maximális pulzus
+                        60-80%-a közötti értéken végezzük a gyakorlatot. Ebben az esetben elegendő oxigén áll rendelkezésünkre a sejtek oxigénigényének
+                        kielégítésére.</p>
+
+                    <p>Egy kis kitérő: a maximális pulzusszámot úgy tudod kiszámolni, hogy 220-ból kivonod az életkorod, majd az aerob-anaerob tartományhoz
+                        ennek a 60 illetve 80%-át veszed. Ez az ún. ökölszabály. Egy 25 éves alanynál ez 220-25, azaz 195 x 0,6= 117 alsó határérték, és
+                        195 x 0,8= 156 felső határérték közötti pulzusszámot jelent. A maximum érték feletti pulzusnál megy át a mozgásforma anaerob
+                        tartományba, ez az anaerob küszöb. A pulzusszám alsó határértéke alá menni sem célszerű, mert ez az alacsony intenzitás nem alkalmas
+                        a zsír mobilizálására. Pulzusmérő nélkül is viszonylag könnyen belőheted a megfelelő tartományt: olyan tempóban csináld, hogy a
+                        teljes edzés alatt képes legyél végig beszélgetni a társaddal úgy, hogy nem kapkodsz a levegőért és nem szúr az oldalad.</p>
+
+                    <p>Az aerob mozgást legalább 40 percig érdemes végezni, mivel az első 15-20 percben a prioritást a szénhidrátok élvezik abban a
+                        tekintetben, hogy ők az elsődleges energiaszolgáltatók, legalább is az ATP (adenozin-trifoszfát) és CP (kreatin foszfát) után.
+                        Ugye már mondtam, hogy a szénhidrátok aerob körülmények között is tudnak energiát szolgáltatni. Ez történik az aerob mozgás első
+                        15-20 percében. Edzettségtől függ, hogy meddig tart ez a folyamat. Élsportolóknál már 10 perc után energiaszolgáltatót vált a
+                        szervezet és megkezdődik a zsírégetés, míg edzetleneknél ez akár 20 percet is igénybe vehet. Ezt követően a szervezet, mivel
+                        nem akarja teljesen lemeríteni a glikogénraktárait védekezésbe kezd, mivel vannak olyan sejtjeink, amelyek kizárólag szénhidráttal
+                        működnek. Ekkor energiaszolgáltatót vált a szervezet és kezdődik a zsírégetés. Ezt akár másfél óráig is lehet folytatni, azonban
+                        ezen túl csak szénhidrátpótlás mellett javasolt. Ha ezt nem így tennénk, akkor újra energiaszolgáltatót vált a szervezet és az
+                        izomszerkezeti fehérjéket bontja le, hogy azokból állítson elő szénhidrátot (glükoneogenezis) és ezt egyetlen sportoló sem engedheti
+                        meg magának. Ezért esznek a triatlonisták csokit, banánt verseny közben.</p>
+
+                    <p>Ezek után nyilvánvalóvá válik, hogy az, aki elmegy futni egy 15-20 percre, az nem fog fogyni! Legalább is nem zsírból, ami az alapvető
+                        cél lenne. Itt szeretném a másik gyakori tévhitet eloszlatni: a befóliázást. Az tény, hogy magasabb testhőmérsékletnél jobban
+                        mobilizálhatóak a zsírsavak, de ez csak akkor igaz, ha belülről fakad, mint pl: a láz. Ha ezt nem hiszed el, akkor ülj be egy kályha
+                        mellé. Meglátjuk mennyit fogsz fogyni…</p>
+
+                    <p> Na de a lényeg: mikor, mennyit, hogyan. Tömegelés alatt is szükség lenne a heti 3-4 alkalomra (kivéve ektomorfok), ahhoz hogy a járulékos
+                        zsírfelvételt minimalizálni lehessen. Diéta során a szénhidrát bevitel csökkentésével párhuzamosan lehet növelni a kardió edzések számát.
+                        Kezdve heti 3-4 alkalommal, és egészen napi kettőig emelve.</p>
+
+                    <p> Érdemes a súlyzós edzések után 30 perc gyors gyaloglást beiktatni, hiszen ezáltal fel tudjuk erősíteni a súlyzós edzés utólagos zsírégető
+                        hatását, ezáltal pedig a leghatékonyabban ekkor tudunk fogyni. Azonban először gyorsfelszívódású fehérje és szénhidrát által tápanyaghoz
+                        kell juttatnunk a testünket. A tempót mindenkinek saját magának kell belőnie, de az ideális kb. 5,5-6 km/h. Természetesen itt is érvényes
+                        az az ökölszabály, hogy addig vagyunk a megfelelő tartományban, amíg még éppen tudunk különösebb lihegés nélkül beszélni.</p>
+
+                    <p>A pihenőnapokon pedig be lehet vetni a leghatásosabb fegyvert, az intervallum edzést, más néven Fartlek iramjátékot. Ez abból áll, hogy
+                        egy edzés során váltakozik az aerob és az anaerob mozgásforma és pulzustartomány, pl: futás és gyors gyaloglás. Ez egy gyilkos fegyver
+                        a zsírégetésben, amelyet nem ajánlatos megüresedett glikogénraktárak esetén alkalmazni, ugyanis az anaerob szakaszban fennáll az
+                        izomvesztés lehetősége. Ennek az edzésnek a lényege, hogy a futás során a maximális pulzus 80%-a körüli értéket érünk el, de mire a
+                        pulzus átváltana anaerobba, a gyaloglás visszalöki 60-70 %-ra, tehát aerob alsó tartományba, majd ismét 80% körüli értéken tetőzik.
+                        A futás anaerob jellegű, illetve lenne, ha nem fojtanánk vissza a pulzusszámot aerobra. Kivitelezni legkönnyebben 400m-es futópályán
+                        lehet. Itt a köríven gyalogolni (100m) 4-6 km/h-s tempóban, és az egyenes szakaszban (100m) kocogni kell, kb. 8-10 km/h-s gyorsasággal
+                        edzettségi szinttől függően. Ezt az edzésformát elegendő 40 perc erejéig folytatni.</p>
+
+                    <p>A diéta vége felé plusz löketet adhat az alfa kardió. Ekkor éhgyomorral végzünk kardió edzést reggel, amikor a glikogénraktárak csaknem
+                        üresek, ezáltal a szervezetnek ténylegesen nincs más lehetősége, mintsem hogy a zsírból vegyen energiát. Ez a módszer azért a diéta
+                        végére ajánlott, mert az adrenerg receptorokat támadja, amelyek a makacs zsír tárolásáért felelősek. Kizárólag 10%-os testzsír alatt,
+                        amikor már kezdenek látszani a kockák a hason.</p>
+
+                    <p>Férfiaknál ebből a makacs zsírrétegből alhasi tájékon, nőknél csípőn, fenéken és combon van sok. Ezt a lehetőséget azonban nem érdemes
+                        túl korán bevetni, mert eleinte még bőven elegendő a fent említett két lehetőség is.</p>
+
+                    <p>Amikor a diéta során már napi kettő kardió edzésünk van, akkor felvetődhet a kérdés, hogy mikor és milyen edzést dobjunk be másodiknak.
+                        A válasz, hogy reggeli után, 45-50 percet kell 5,5-6 km/h-s tempóval gyalogolni. Ez nem keverendő össze az alfa kardióval, ugyanis
+                        ilyenkor van már a szervezetünkben szénhidrát.</p>
+                </div>
+                <div class="tab-pane fade" id="nav-weighted" role="tabpanel" aria-labelledby="nav-weighted-tab" style="text-align:justify">
+                    <h4>Kedves Kondisok!</h4>
+
+                    <p> Ebben a cikkünkben a súlyzós edzés legfőbb buktatóit vesszük sorra. A téma nagyon komplex, biztosan fogunk még róla írni.
+                        Ez a cikk elsősorban olyanoknak szól, akik már jártak/járnak konditerembe. Na de mi is ennek súlyzós edzésnek nevezett
+                        edzésmódszernek a lényege? Súlyzós edzés során a célizmot terhelésnek tesszük ki: terhelés alatt az izmot a teljes megnyúlás
+                        állapotából a teljes összehúzódás állapotába juttatjuk, majd ezt ismételjük. Az edzés során az izom glikogénraktárai kiürülnek,
+                        az izmot felépítő fehérjeszerkezet sérül. A regeneráció során megfelelő táplálkozással és pihenéssel az izmot felkészítjük a
+                        következő edzésre, ahol nagyobb terhelést lesz képes elviselni. A nagyobb igénybevételt úgy tudja elviselni, ha a regeneráció
+                        során növekszik. Ez így egyszerűen hangzik nemde? Igen, a képlet valóban ennyire egyszerű: táplálkozás, edzés pihenés, ilyen
+                        fontossági sorrendben. Ha a képletből kiveszed az egyik változót nem fog működni, ergo nem fogsz fejlődni, rosszabb esetben
+                        visszafejlődsz, vagy megsérülsz. Ebben a cikkben az edzés során elkövethető legelemibb hibákat elemezzük ki.</p>
+
+                    <p>Először is, nagyon fontos a helyes edzéstechnika. Az előbb is leírtam, de nem lehet elégszer hangsúlyozni: teljes mozgástartományban
+                        kell dolgozni! Igen létezik olyan, hogy részismétlés, de nem az egész edzés épül erre, bár ez sokaknál megfigyelhető. A mozgás alatt
+                        az izmot folyamatosan kontrollálnod kell, érezned, ahogy dolgozik. Ha nem érzed az izmot, amit edzel, valamit rosszul csinálsz.
+                        De nagyon. A NEGATÍV szakasz során kontrolláltan kell a súlyt leengedned, ne engedd az izmaidat elernyedni! Szintén közkedvelt
+                        megoldás lendületből dolgozni. Az egyik legjobb példa, amikor fekvenyomás során a delikvens előszeretettel magára ejti a súlyt,
+                        majd a mellkasán megpattintja a rudat, és az így nyert lendületet kihasználva nyomja ki. Ez inkább az ego edzésének kedvez, az
+                        izmokénak semmiképp.</p>
+
+                    <p>Nem tudjuk megkerülni a pihenőidő kérdéskörét sem. A terembe edzeni járunk le, nem szociális életet élni, és péniszt lóbálni. Sajnos
+                        sokan esnek abba a hibába, hogy az izmaik helyett a szájukat dolgoztatják. A gyakorlatok közti pihenőidő átlagosan egy perc. Nagyobb
+                        izmoknál kicsit több, kisebbeknél kicsit kevesebb. De semmiképp sem 2-3 perc, vagy ennél is több! Nem azt mondom, hogy egy szó nélkül
+                        kell végig edzeni, de aki kompetens a témában nem fog megsértődni, ha otthagyod, hogy lenyomj egy sorozatot. Másrészről a többi
+                        sporttárs elől foglalod az adott gépet.</p>
+
+                    <p>ALAPOS bemelegítés. Hát igen, ez sem egy népszerű dolog. Bemelegítés során felkészíted a tested és az idegrendszered a terhelésre.
+                        Az izmokba vér áramlik, megemelkedik a pulzusod, csupa olyan folyamat játszódik le, ami nélkülözhetetlen a biztonságos edzéshez.
+                        Egy hanyag bemelegítés könnyen sérülésekhez vezethet. Szánj rá 8-10 percet, hosszabb távon mindenképp megéri!</p>
+
+                    <p> Az edzés utáni nyújtás szintén kritikus kérdés. Bevallom töredelmesen, nálam is. Az edzés után végzett statikus nyújtás növeli a
+                        hajlékonyságot, az erőszintet és csökkenti a kortizol szintjét, valamint segíti a regenerációt is. Nem megkerülhető dolog! Ezzel
+                        szemben edzés előtt tartózkodj a statikus nyújtó gyakorlatoktól, mivel közvetlenül edzés előtt csökkentik az erőszinted, és
+                        sérülésveszélyt is jelent egy nem bemelegedett izomnál.</p>
+
+                    <p>A legfontosabb dolgot a végére hagytam: táplálkozás. Ugye ez szerepelt az első helyen a kis képletünkben. Edzhetsz akármilyen keményen,
+                        akármilyen edzésmódszer szerint, semmit nem fog érni megfelelő étrend nélkül. Parizerből és kenyérből senki nem épített izmokat.
+                        Ez egy nagyon-nagyon hosszú téma, külön cikkben, cikkekben foglalkozunk még vele, de a honlapon a táplálkozás fül alatt már jónéhány
+                        információt megtaláltok ezzel kapcsolatban.</p>
+
+                    <p>A fentiekkel nem volt tisztem senkit megbántani. Úgy gondolom, a teremben töltött órákat mindenki a leghasznosabban szeretné eltölteni,
+                        ehhez pedig nélkülözhetetlenek az imént leírtak. Akinek pedig nem inge…</p>
+
+                    <p>Papp Márton</p>
+                </div>
+            </div>
+		  <hr>
+          
+        </div>
+
+          <!--/*/ <th:block th:include="fragments/right-column :: right-column"></th:block> /*/-->
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <!--/*/ <th:block th:include="fragments/footer :: footer"></th:block> /*/-->
+  </body>
+
+</html>

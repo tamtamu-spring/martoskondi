@@ -38,7 +38,6 @@ body {
   color: #FF5722;
 }
 
-
 .navbar .navbar-brand,
 .navbar .navbar-nav .nav-link{
   color: #FF5722;
@@ -62,4 +61,13 @@ body {
 
 .navbar-toggler-icon {
   background-color: #263238;
+}
+
+.text-justified {
+  text-align: justify;
+}
+.text-justified:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
 }

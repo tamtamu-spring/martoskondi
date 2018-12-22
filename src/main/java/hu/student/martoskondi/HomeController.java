@@ -17,5 +17,15 @@ public class HomeController {
         return "rules";
     }
 
+    @GetMapping("/training")
+    public String getTraining() {
+        return "training";
+    }
+
+    @GetMapping("/gym")
+    public String getGym() {
+        return "gym";
+    }
+
 
 }

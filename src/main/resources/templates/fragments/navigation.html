@@ -15,7 +15,9 @@
             <img src="martoskondilogo.png" alt="Martos Kondi Kör" width="40" height="40" >
         </a>
 
-        <a class="navbar-brand" href="#">Martos Kondi Kör</a>
+        <a class="navbar-brand"
+           th:classappend="${#request.getRequestURI() == '/' ? 'active' : ''}"
+           th:href="@{/}">Martos Kondi Kör</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -34,7 +36,9 @@
                 </li>
                 <div class="divider-vertical"> </div>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Terem</a>
+                    <a class="nav-link"
+                       th:classappend="${#request.getRequestURI() == '/gym' ? 'active' : ''}"
+                       th:href="@{/gym}">Terem</a>
                 </li>
                 <div class="divider-vertical"> </div>
                 <li class="nav-item">
@@ -42,7 +46,9 @@
                 </li>
                 <div class="divider-vertical"> </div>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Edzések</a>
+                    <a class="nav-link"
+                       th:classappend="${#request.getRequestURI() == '/training' ? 'active' : ''}"
+                       th:href="@{/training}">Edzések</a>
                 </li>
                 <div class="divider-vertical"> </div>
                 <li class="nav-item">
