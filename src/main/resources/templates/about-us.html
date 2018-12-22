@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="https://www.thymeleaf.org/">
+
+<head>
+    <!--/*/ <th:block th:include="fragments/head :: head"></th:block> /*/-->
+</head>
+
+<body>
+
+<!-- Navigation -->
+<!--/*/ <th:block th:include="fragments/navigation :: navigation"></th:block> /*/-->
+
+<!-- Header with Background Image -->
+<!--/*/ <th:block th:include="fragments/header :: header"></th:block> /*/-->
+
+<!-- Page Content -->
+<div class="container">
+
+    <div class="row">
+        <div class="col-sm-8">
+            <h2 class="mt-4">Körtagok</h2>
+            <hr>
+            <img class="img-fluid rounded" src="img/reka.jpg" alt="">
+            <hr>
+
+        </div>
+
+        <!--/*/ <th:block th:include="fragments/right-column :: right-column"></th:block> /*/-->
+
+    </div>
+    <!-- /.row -->
+
+
+</div>
+<!-- /.container -->
+
+<!-- Footer -->
+<!--/*/ <th:block th:include="fragments/footer :: footer"></th:block> /*/-->
+
+</body>
+
+</html>

@@ -12,18 +12,23 @@ public class HomeController {
         return "index";
     }
 
+    @GetMapping("/about-us")
+    public String getAboutUsPage() {
+        return "about-us";
+    }
+
     @GetMapping("/rules")
-    public String getRules() {
+    public String getRulesPage() {
         return "rules";
     }
 
     @GetMapping("/training")
-    public String getTraining() {
+    public String getTrainingPage() {
         return "training";
     }
 
     @GetMapping("/gym")
-    public String getGym() {
+    public String getGymPage() {
         return "gym";
     }
 
