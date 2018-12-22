@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="https://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div th:fragment="navigation">
+<nav class="navbar navbar-expand-lg navbar-light bg-custom fixed-top" >
+    <div class="container">
+
+        <a class="navbar-brand">
+            <img src="martoskondilogo.png" alt="Martos Kondi Kör" width="40" height="40" >
+        </a>
+
+        <a class="navbar-brand" href="#">Martos Kondi Kör</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" th:classappend="${#request.getRequestURI() == '/' ? 'active' : ''}"
+                       th:href="@{/}">Rólunk
+                    </a>
+                </li>
+                <div class="divider-vertical"> </div>
+                <li class="nav-item">
+                    <a class="nav-link"
+                       th:classappend="${#request.getRequestURI() == '/rules' ? 'active' : ''}"
+                       th:href="@{/rules}">Házirend</a>
+                </li>
+                <div class="divider-vertical"> </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Terem</a>
+                </li>
+                <div class="divider-vertical"> </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Táplálkozás</a>
+                </li>
+                <div class="divider-vertical"> </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Edzések</a>
+                </li>
+                <div class="divider-vertical"> </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Profil</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+</div>
+
+</body>
+</html>

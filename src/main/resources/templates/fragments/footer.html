@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="https://www.thymeleaf.org/">
+<head>
+</head>
+<body>
+<div th:fragment="footer">
+    <footer class="py-5 bg-custom">
+        <div class="container">
+            <p class="m-0 text-center text-deeporange">Martos Kondi Kör 2018</p>
+        </div>
+        <!-- /.container -->
+    </footer>
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(window).scroll(function () {
+
+            //After scrolling 100px from the top...
+            if ($(window).scrollTop() >= 100) {
+                $('.navbar').css('opacity', '0.85');
+
+                //Otherwise remove inline styles and thereby revert to original stying
+            } else {
+                $('.navbar').css('opacity', '1');
+            }
+        });
+    </script>
+</div>
+</body>
+</html>
