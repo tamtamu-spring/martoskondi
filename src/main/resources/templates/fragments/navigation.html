@@ -52,7 +52,9 @@
                 </li>
                 <div class="divider-vertical"> </div>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Profil</a>
+                    <a class="nav-link"
+                       th:classappend="${#request.getRequestURI() == '/profile' ? 'active' : ''}"
+                       th:href="@{/profile}">Profil</a>
                 </li>
             </ul>
         </div>

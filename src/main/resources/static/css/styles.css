@@ -71,3 +71,9 @@ body {
   display: inline-block;
   width: 100%;
 }
+
+.btn-secondary {
+  color: #FF5722;
+  background-color: #212121;
+  border-color: #212121;
+}
