@@ -77,3 +77,8 @@ body {
   background-color: #212121;
   border-color: #212121;
 }
+.btn-secondary:hover {
+  color: #ff8a65;
+  background-color: #424242;
+  border-color: #424242;
+}
